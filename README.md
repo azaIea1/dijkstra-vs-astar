@@ -12,7 +12,14 @@ On one 60x60 grid with a barrier, Dijkstra's algorithm expanded 3,515 nodes and 
 
 Ties in the priority queue go to the cell closer to the goal. This result comes from that single grid. It is not a general claim about A*.
 
+![Figure 3: nodes expanded by Dijkstra's algorithm and A* on the same grid](figure3.png)
+
 ## Run it
+The figure needs matplotlib.
+
 ```
+pip install -r requirements.txt
 python dijkstra_vs_astar.py
 ```
+
+It prints the node counts and route costs for both algorithms and saves `figure3.png`.
